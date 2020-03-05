@@ -7,13 +7,15 @@
 ## Description
 
 _This console application takes input of a word and returns the scrabble score for that word. Scrabble scoring uses the following points system:_
-* _A, E, I, O, U, L, N, R, S, T       1_
-* _D, G                               2_
-* _B, C, M, P                         3_
-* _F, H, V, W, Y                      4_
-* _K                                  5_
-* _J, X                               8_
-* _Q, Z                               10_
+| Letters | Points per Letter |
+| ------------- | -------------------:|
+| A, E, I, O, U, L, N, R, S, T | 1 |
+| D, G | 2 |
+| B, C, M, P | 3 |
+| F, H, V, W, Y | 4 |
+| K | 5 |
+| J, X | 8 |
+| Q, Z | 10 |
 
 ## Specifications:
 
