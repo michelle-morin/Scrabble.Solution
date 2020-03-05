@@ -55,5 +55,12 @@ namespace Scrabble.Tests
       int score = Word.CheckScore("job");
       Assert.AreEqual(12, score);
     }
+
+    [TestMethod]
+    public void CheckScore_ReturnsZScore_12()
+    {
+      int score = Word.CheckScore("zoo");
+      Assert.AreEqual(12, score);
+    }
   }
 }
