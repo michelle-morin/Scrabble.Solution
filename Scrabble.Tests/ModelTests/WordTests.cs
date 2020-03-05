@@ -13,12 +13,19 @@ namespace Scrabble.Tests
       int score = Word.CheckScore("hello there");
       Assert.AreEqual(0, score);
     }
-    
+
     [TestMethod]
-    public void CheckScore_ReturnScore_1()
+    public void CheckScore_ReturnsScore_1()
     {
       int score = Word.CheckScore("a");
       Assert.AreEqual(1, score);
+    }
+
+    [TestMethod]
+    public void CheckScore_ReturnsScore_5()
+    {
+      int score = Word.CheckScore("dog");
+      Assert.AreEqual(5, score);
     }
   }
 }

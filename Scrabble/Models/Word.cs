@@ -21,6 +21,10 @@ namespace Scrabble.Models
           {
             score += 1;
           }
+          else if (wordArray[i] == 'd' || wordArray[i] == 'g')
+          {
+            score += 2;
+          }
         }
         return score;
       }
