@@ -27,5 +27,12 @@ namespace Scrabble.Tests
       int score = Word.CheckScore("dog");
       Assert.AreEqual(5, score);
     }
+
+    [TestMethod]
+    public void CheckScore_ReturnsScore_7()
+    {
+      int score = Word.CheckScore("map");
+      Assert.AreEqual(7, score);
+    }
   }
 }
