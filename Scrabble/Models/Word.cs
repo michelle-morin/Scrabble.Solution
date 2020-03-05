@@ -2,7 +2,7 @@ using System;
 
 namespace Scrabble.Models
 {
-  public class Word
+  abstract class Word
   {
     public static int CheckScore(string word)
     {
@@ -48,7 +48,6 @@ namespace Scrabble.Models
         }
         return score;
       }
-
     }
   }
 }
