@@ -29,6 +29,10 @@ namespace Scrabble.Models
           {
             score += 3;
           }
+          else if (wordArray[i] == 'f' || wordArray[i] == 'h' || wordArray[i] == 'v' || wordArray[i] == 'w' || wordArray[i] == 'y')
+          {
+            score += 4;
+          }
         }
         return score;
       }
