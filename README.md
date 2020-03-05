@@ -19,8 +19,8 @@ _This console application takes input of a word and returns the scrabble score f
 
 | Specification | Example Input | Example Output |
 | ------------- |:-------------:| -------------------:|
-| Application creates instance of a word | "hello" | Word myWord = new Word("hello"); |
-| Application loops through each letter of the word and returns a scrabble score for the word | "a" | 1 |
+| Application takes input of a single word, and returns score 0 if input includes spaces | "hello there" | 0 |
+| Application takes input of word, loops through each letter of the word, and returns a scrabble score for the word | "a" | 1 |
 | Each "a", "e", "i", "o", "u", "l", "n", "r", "s", or "t" in the word increment the scrabble score by 1 point | "at" | 2 |
 | Each "d" or "g" in the word increment the scrabble score by 2 points | "dog" | 5 |
 | Each "b", "c", "m", or "p" increment the scrabble score by 3 points | "map" | 7 |
