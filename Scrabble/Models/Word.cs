@@ -37,6 +37,10 @@ namespace Scrabble.Models
           {
             score += 5;
           }
+          else if (wordArray[i] == 'j' || wordArray[i] == 'x')
+          {
+            score += 8;
+          }
         }
         return score;
       }
