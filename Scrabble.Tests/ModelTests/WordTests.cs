@@ -10,57 +10,65 @@ namespace Scrabble.Tests
     [TestMethod]
     public void CheckScore_ReturnZeroForPluralWords_0()
     {
-      int score = Word.CheckScore("hello there");
-      Assert.AreEqual(0, score);
+      Word myWord = new Word("hello there");
+      myWord.CheckScore();
+      Assert.AreEqual(0, myWord.Score);
     }
 
     [TestMethod]
     public void CheckScore_ReturnsScore_1()
     {
-      int score = Word.CheckScore("a");
-      Assert.AreEqual(1, score);
+      Word myWord = new Word("a");
+      myWord.CheckScore();
+      Assert.AreEqual(1, myWord.Score);
     }
 
     [TestMethod]
     public void CheckScore_ReturnsScore_5()
     {
-      int score = Word.CheckScore("dog");
-      Assert.AreEqual(5, score);
+      Word myWord = new Word("dog");
+      myWord.CheckScore();
+      Assert.AreEqual(5, myWord.Score);
     }
 
     [TestMethod]
     public void CheckScore_ReturnsScore_7()
     {
-      int score = Word.CheckScore("map");
-      Assert.AreEqual(7, score);
+      Word myWord = new Word("map");
+      myWord.CheckScore();
+      Assert.AreEqual(7, myWord.Score);
     }
 
     [TestMethod]
     public void CheckScore_ReturnsScore_10()
     {
-      int score = Word.CheckScore("yawn");
-      Assert.AreEqual(10, score);
+      Word myWord = new Word("yawn");
+      myWord.CheckScore();
+      Assert.AreEqual(10, myWord.Score);
     }
 
     [TestMethod]
     public void CheckScore_ReturnsScore_13()
     {
-      int score = Word.CheckScore("yuck");
-      Assert.AreEqual(13, score);
+      Word myWord = new Word("yuck");
+      myWord.CheckScore();
+      Assert.AreEqual(13, myWord.Score);
     }
 
     [TestMethod]
     public void CheckScore_ReturnsScore_12()
     {
-      int score = Word.CheckScore("job");
-      Assert.AreEqual(12, score);
+      Word myWord = new Word("job");
+      myWord.CheckScore();
+      Assert.AreEqual(12, myWord.Score);
     }
 
     [TestMethod]
     public void CheckScore_ReturnsZScore_12()
     {
-      int score = Word.CheckScore("zoo");
-      Assert.AreEqual(12, score);
+      Word myWord = new Word("zoo");
+      myWord.CheckScore();
+      Assert.AreEqual(12, myWord.Score);
     }
   }
 }
